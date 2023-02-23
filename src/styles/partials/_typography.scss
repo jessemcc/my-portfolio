@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Playfair";
+  src: url("../../assets/fonts/PlayfairDisplay-Regular.ttf") format("TrueType");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../../assets/fonts/PlayfairDisplay-Italic.ttf") format("TrueType");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../../assets/fonts/PlayfairDisplay-Bold.ttf") format("TrueType");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../../assets/fonts/PlayfairDisplay-BoldItalic.ttf")
+    format("TrueType");
+  font-weight: 700;
+  font-style: bold, italic;
+}
