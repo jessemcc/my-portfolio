@@ -1,0 +1,25 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav {
+  background-color: $primary-color-3;
+
+  &__container {
+    width: 100%;
+    height: 5.5rem;
+    max-width: 102rem;
+  }
+
+  &__logo {
+    @include size(5rem, 5rem);
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    text-align: end;
+  }
+}
