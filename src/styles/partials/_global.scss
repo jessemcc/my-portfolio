@@ -56,10 +56,14 @@ h4 {
   }
 }
 
-a {
-  @include font-styles(1rem, 1.3rem, 400);
+.link {
+  @include font-styles(1.2rem, 1.3rem, 400);
   text-decoration: none;
-  color: $primary-color-1;
+  color: $primary-color-2;
+
+  &:active {
+    color: $primary-color-1;
+  }
 }
 
 p {
@@ -72,5 +76,5 @@ p {
 }
 
 .app {
-  background: linear-gradient($base-color-2, $primary-color-3);
+  background: linear-gradient($primary-color-3, $base-color-2);
 }
