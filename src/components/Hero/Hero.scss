@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.hero {
+  background-color: $primary-color-1;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 50rem;
+    height: 21rem;
+    color: #abb2bf;
+    font-family: monospace;
+    font-size: 1.05rem;
+    padding: 2rem;
+    margin: 0 auto;
+
+    @include tablet {
+      font-size: 1.3rem;
+      height: 25rem;
+    }
+  }
+}

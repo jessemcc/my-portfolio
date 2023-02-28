@@ -15,8 +15,11 @@ const NavBar = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+        <Navbar.Collapse
+          className="nav__collapse-container"
+          id="basic-navbar-nav collapse-container"
+        >
+          <Nav className="nav__link-container ms-auto">
             <Nav.Link>
               <Link className="link" to="/">
                 Home
@@ -24,17 +27,17 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link>
               <Link className="link" to="/about">
-                About Me
+                About
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link className="link" to="/projects">
-                My Projects
+                Projects
               </Link>
             </Nav.Link>
             <Nav.Link>
               <Link className="link" to="/contact">
-                Contact Me
+                Contact
               </Link>
             </Nav.Link>
           </Nav>

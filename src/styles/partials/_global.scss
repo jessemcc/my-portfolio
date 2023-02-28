@@ -13,8 +13,9 @@ html {
 }
 
 body {
+  background-color: $primary-color-1;
+  color: $primary-color-3;
   font-family: "Playfair";
-  color: $primary-color-1;
   margin: 0 auto;
 }
 
@@ -59,10 +60,10 @@ h4 {
 .link {
   @include font-styles(1.2rem, 1.3rem, 400);
   text-decoration: none;
-  color: $primary-color-2;
+  color: $primary-color-1;
 
   &:active {
-    color: $primary-color-1;
+    color: $primary-color-2;
   }
 }
 
@@ -73,8 +74,4 @@ p {
   @include tablet {
     @include font-styles(1.2rem, 1.5rem, 400);
   }
-}
-
-.app {
-  background: linear-gradient($primary-color-3, $base-color-2);
 }
