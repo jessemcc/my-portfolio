@@ -3,23 +3,46 @@
 
 .nav {
   background-color: $primary-color-3;
+  border: 1px solid $primary-color-2;
+  width: 100%;
+  padding-right: 1rem;
 
   &__container {
-    width: 100%;
     height: 5.5rem;
     max-width: 102rem;
+    padding: 0 !important;
   }
 
   &__logo {
     @include size(5rem, 5rem);
   }
 
-  .navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
+  &__collapse-container {
+    width: 100%;
+  }
+
+  &__link-container {
+    @include flex(column, center, center, nowrap);
+    border: 1px solid $primary-color-2;
+    border-top: none;
+    margin-top: 0.4rem;
+    width: 5.5rem;
+    background-color: $primary-color-3;
+    border-bottom-left-radius: 1rem;
+
+    @include tablet {
+      width: 20rem;
+      border: none;
+    }
   }
 
   .nav-link {
+    @include flex(column, center, flex-end, nowrap);
+    width: 4rem;
     text-align: end;
+
+    @include tablet {
+      width: 6rem;
+    }
   }
 }
