@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    const typed = new Typed(".typing-element", options);
+    const typed = new Typed(".hero-typing", options);
 
     return () => {
       typed.destroy();
@@ -24,7 +24,7 @@ const Hero = () => {
     <section className="hero">
       <article className="hero__container">
         <pre
-          className="typing-element"
+          className="hero-typing"
           style={{ whiteSpace: "pre-wrap", lineHeight: "1.5" }}
         />
       </article>
