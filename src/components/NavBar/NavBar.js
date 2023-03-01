@@ -21,22 +21,22 @@ const NavBar = () => {
         >
           <Nav className="nav__link-container ms-auto">
             <Nav.Link>
-              <Link className="link" to="/">
+              <Link className="nav__link" to="/">
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link" to="/about">
+              <Link className="nav__link" to="/about">
                 About
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link" to="/projects">
+              <Link className="nav__link" to="/projects">
                 Projects
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="link" to="/contact">
+              <Link className="nav__link" to="/contact">
                 Contact
               </Link>
             </Nav.Link>
