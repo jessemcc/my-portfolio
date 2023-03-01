@@ -6,9 +6,9 @@ import Resume from "../../assets/files/jesse-mcconnell-resume.pdf";
 const HomeAbout = () => {
   return (
     <section className="h-about">
+      <h1 className="h-about__title">ABOUT ME</h1>
       <article className="h-about__container">
         <div className="h-about__image-container">
-          <h1 className="h-about__title">ABOUT ME</h1>
           <img
             src={Portrait}
             alt="Head shot of Jesse McConnell"
@@ -18,17 +18,37 @@ const HomeAbout = () => {
         <article className="h-about__about-section-container">
           <div className="h-about__about-me-container">
             <p className="h-about__about-me">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-              soluta iste, atque, fugiat cum quibusdam accusantium aut
-              consectetur id accusamus consequuntur reprehenderit ratione quam
-              velit! Quaerat labore fugit eveniet et. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Nam quod beatae quo unde
-              aliquam reiciendis corrupti vero recusandae, dolorem a dolor
-              accusantium libero deleniti, deserunt iusto quasi autem eum
-              fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Expedita illum maxime harum maiores eos dicta rerum fugiat quas.
-              Laboriosam quae at voluptate tenetur quasi enim reiciendis modi
-              ducimus doloremque dolorem.
+              Hello there! My name is Jesse McConnell, and I am a software
+              engineer with a diploma from Brainstation. I have a passion for
+              designing and developing websites and applications that are both
+              functional and aesthetically pleasing. With four years of prior
+              experience in web design, I am a self-taught coder who has honed
+              my skills through online courses from freecodecamp and codecademy.{" "}
+              <br />
+              <br />I am a firm believer in the power of continuous learning and
+              growth, which is why I spend my free time practicing with leetcode
+              and building websites. I am constantly striving to improve my
+              skills and stay up-to-date with the latest trends and technologies
+              in the field of software engineering. <br />
+              <br />
+              Beyond my professional life, I have a variety of hobbies and
+              interests that keep me engaged and energized. I am an avid movie
+              and TV show buff and love to spend my downtime catching up on the
+              latest releases. I am also a big fan of board games like Catan,
+              chess, Go, and Risk, and enjoy playing video games like XCOM,
+              Elden Ring, and NHL. <br />
+              <br />
+              Before becoming a software engineer, I worked in customer service,
+              first as a security guard for the US Embassy, and later as a
+              supervisor for Subway. These experiences taught me the importance
+              of communication, problem-solving, and attention to detail, all of
+              which have proven to be invaluable skills in my current role.{" "}
+              <br />
+              <br />I am passionate about creating intuitive, user-friendly, and
+              efficient web applications that meet the needs of my clients and
+              users. I am constantly seeking new challenges and opportunities to
+              learn and grow in my field, and am excited about what the future
+              holds for me as a software engineer.
             </p>
           </div>
           <div className="h-about__buttons-container">
