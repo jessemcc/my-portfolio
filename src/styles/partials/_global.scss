@@ -58,9 +58,14 @@ h4 {
 }
 
 .link {
-  @include font-styles(1.2rem, 1.3rem, 400);
+  @include flex(row, center, center, nowrap);
+  @include size(9.5rem, 3rem);
+  @include font-styles(1.2rem, 1.3rem, 700);
   text-decoration: none;
   color: $primary-color-1;
+  background-color: $primary-color-3;
+  border-radius: 1rem;
+  border: 2px solid $secondary-color-1;
 
   &:active {
     color: $primary-color-2;

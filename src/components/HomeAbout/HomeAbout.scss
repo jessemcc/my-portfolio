@@ -1,2 +1,40 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.h-about {
+  color: $primary-color-3;
+
+  &__container {
+    margin: 1.6rem;
+    max-width: 102rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__image-container {
+    width: 28.75rem;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem black;
+  }
+
+  &__about-section-container {
+    padding-bottom: 2rem;
+  }
+
+  &__about-me {
+    margin: 2rem auto;
+  }
+
+  &__buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

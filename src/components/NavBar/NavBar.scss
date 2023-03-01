@@ -3,9 +3,8 @@
 
 .nav {
   background-color: $primary-color-3;
-  border: 1px solid $primary-color-2;
   width: 100%;
-  padding-right: 1rem;
+  box-shadow: 0.1rem 0.5rem 0.5rem black;
 
   &__container {
     height: 5.5rem;
@@ -23,16 +22,26 @@
 
   &__link-container {
     @include flex(column, center, center, nowrap);
-    border: 1px solid $primary-color-2;
     border-top: none;
     margin-top: 0.4rem;
     width: 5.5rem;
     background-color: $primary-color-3;
     border-bottom-left-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem black;
 
     @include tablet {
       width: 20rem;
       border: none;
+    }
+  }
+
+  &__link {
+    @include font-styles(1.2rem, 1.3rem, 400);
+    text-decoration: none;
+    color: $primary-color-1;
+
+    &:active {
+      color: $primary-color-2;
     }
   }
 
@@ -45,4 +54,8 @@
       width: 6rem;
     }
   }
+}
+
+.navbar-toggler {
+  margin-right: 1rem;
 }
