@@ -1,6 +1,7 @@
 import "./HomePage.scss";
 import Hero from "../../components/Hero/Hero";
 import HomeAbout from "../../components/HomeAbout/HomeAbout";
+import HomeTechnologies from "../../components/HomeTechnologies/HomeTechnologies";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <article className="home__container">
         <Hero />
         <HomeAbout />
+        <HomeTechnologies />
       </article>
     </section>
   );

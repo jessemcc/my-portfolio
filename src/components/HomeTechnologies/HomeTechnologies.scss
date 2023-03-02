@@ -1,0 +1,42 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.tech {
+  color: $primary-color-1;
+  background-color: $primary-color-3;
+
+  @include tablet {
+    margin: 2rem auto 0 auto;
+    padding: 1.6rem;
+  }
+
+  &__title {
+    margin-left: 1.6rem;
+    padding-top: 1.6rem;
+
+    @include tablet {
+      margin: 0 auto;
+      padding: 1.6rem;
+      max-width: 102rem;
+    }
+  }
+
+  &__container {
+    @include flex(row, center, center, wrap);
+    margin: 1.6rem;
+    max-width: 102rem;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__tech-container {
+    @include size(25rem, 17rem);
+    @include flex(column, space-evenly, center, nowrap);
+  }
+
+  &__image {
+    height: 10rem;
+  }
+}
