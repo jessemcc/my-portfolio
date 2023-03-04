@@ -2,6 +2,7 @@ import "./HomePage.scss";
 import Hero from "../../components/Hero/Hero";
 import HomeAbout from "../../components/HomeAbout/HomeAbout";
 import HomeTechnologies from "../../components/HomeTechnologies/HomeTechnologies";
+import HomeProjects from "../../components/HomeProjects/HomeProjects";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <Hero />
         <HomeAbout />
         <HomeTechnologies />
+        <HomeProjects />
       </article>
     </section>
   );
