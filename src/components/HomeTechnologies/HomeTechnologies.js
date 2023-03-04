@@ -13,6 +13,7 @@ import node from "../../assets/icons/node.png";
 import oauth from "../../assets/icons/oauth.png";
 import react from "../../assets/icons/react.png";
 import sass from "../../assets/icons/sass.png";
+import express from "../../assets/icons/expressJS.png";
 
 const HomeTechnologies = () => {
   return (
@@ -54,6 +55,10 @@ const HomeTechnologies = () => {
         <div className="tech__tech-container">
           <img src={heroku} alt="heroku icon" className="tech__image" />
           <h2 className="tech__tech-title">Heroku</h2>
+        </div>
+        <div className="tech__tech-container">
+          <img src={express} alt="express icon" className="tech__image" />
+          <h2 className="tech__tech-title">Express</h2>
         </div>
         <div className="tech__tech-container">
           <img src={netlify} alt="netlify icon" className="tech__image" />
