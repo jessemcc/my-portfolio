@@ -14,6 +14,8 @@ import oauth from "../../assets/icons/oauth.png";
 import react from "../../assets/icons/react.png";
 import sass from "../../assets/icons/sass.png";
 import express from "../../assets/icons/expressJS.png";
+import axios from "../../assets/icons/axios.png";
+import nodemailer from "../../assets/icons/nodemailer.png";
 
 const HomeTechnologies = () => {
   return (
@@ -79,6 +81,14 @@ const HomeTechnologies = () => {
         <div className="tech__tech-container">
           <img src={jwt} alt="jwt icon" className="tech__image" />
           <h2 className="tech__tech-title">Jwt</h2>
+        </div>
+        <div className="tech__tech-container">
+          <img src={axios} alt="axios icon" className="tech__image" />
+          <h2 className="tech__tech-title">Axios</h2>
+        </div>
+        <div className="tech__tech-container">
+          <img src={nodemailer} alt="html icon" className="tech__image" />
+          <h2 className="tech__tech-title">nodemailer</h2>
         </div>
       </article>
     </section>
