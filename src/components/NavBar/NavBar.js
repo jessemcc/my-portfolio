@@ -1,11 +1,32 @@
 import "./NavBar.scss";
 import logo from "../../assets/logo/jm-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const handleContactClick = (e, sectionId) => {
+    e.preventDefault();
+    if (pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500);
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <Navbar expand="sm" fixed="top" className="nav">
       <Container fluid className="nav__container">
@@ -36,7 +57,11 @@ const NavBar = () => {
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link className="nav__link" to="/contact">
+              <Link
+                className="nav__link"
+                to="/"
+                onClick={(e) => handleContactClick(e, "contact")}
+              >
                 Contact
               </Link>
             </Nav.Link>

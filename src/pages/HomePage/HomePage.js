@@ -7,7 +7,7 @@ import HomeContact from "../../components/HomeContact/HomeContact";
 
 const HomePage = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <article className="home__container">
         <Hero />
         <HomeAbout />

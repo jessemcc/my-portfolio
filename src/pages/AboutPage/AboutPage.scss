@@ -1,0 +1,52 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.about {
+  margin-top: 6.5rem;
+  background-color: $primary-color-1;
+  color: $primary-color-3;
+  min-height: 100vh;
+
+  &__container {
+    margin: 1.6rem;
+
+    @include tablet {
+      max-width: 102rem;
+      padding: 1.6rem;
+      margin: 0 auto;
+      @include flex(row, space-between, flex-start, nowrap);
+    }
+  }
+
+  &__image-container {
+    @include tablet {
+      width: 35%;
+      float: left;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin: 1.6rem 0;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem black;
+  }
+
+  &__info-container {
+    @include tablet {
+      width: 60%;
+      margin: 1.6rem 0 0 0;
+      float: right;
+    }
+  }
+
+  &__about-container {
+    padding-bottom: 1.6rem;
+    text-align: center;
+  }
+
+  &__link-container {
+    @include flex(row, center, center, nowrap);
+    padding-bottom: 2rem;
+  }
+}
