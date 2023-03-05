@@ -16,6 +16,7 @@ import sass from "../../assets/icons/sass.png";
 import express from "../../assets/icons/expressJS.png";
 import axios from "../../assets/icons/axios.png";
 import nodemailer from "../../assets/icons/nodemailer.png";
+import bootstrap from "../../assets/icons/bootstrap.png";
 
 const HomeTechnologies = () => {
   return (
@@ -35,6 +36,10 @@ const HomeTechnologies = () => {
           <h2 className="tech__tech-title">Sass</h2>
         </div>
         <div className="tech__tech-container">
+          <img src={bootstrap} alt="bootstrap icon" className="tech__image" />
+          <h2 className="tech__tech-title">Bootstrap</h2>
+        </div>
+        <div className="tech__tech-container">
           <img src={js} alt="javascript icon" className="tech__image" />
           <h2 className="tech__tech-title">JavaScript</h2>
         </div>
@@ -47,12 +52,20 @@ const HomeTechnologies = () => {
           <h2 className="tech__tech-title">Node</h2>
         </div>
         <div className="tech__tech-container">
+          <img src={nodemailer} alt="html icon" className="tech__image" />
+          <h2 className="tech__tech-title">nodemailer</h2>
+        </div>
+        <div className="tech__tech-container">
           <img src={mysql} alt="mysql icon" className="tech__image" />
           <h2 className="tech__tech-title">MySQL</h2>
         </div>
         <div className="tech__tech-container">
           <img src={api} alt="api icon" className="tech__image" />
           <h2 className="tech__tech-title">API</h2>
+        </div>
+        <div className="tech__tech-container">
+          <img src={axios} alt="axios icon" className="tech__image" />
+          <h2 className="tech__tech-title">Axios</h2>
         </div>
         <div className="tech__tech-container">
           <img src={heroku} alt="heroku icon" className="tech__image" />
@@ -81,14 +94,6 @@ const HomeTechnologies = () => {
         <div className="tech__tech-container">
           <img src={jwt} alt="jwt icon" className="tech__image" />
           <h2 className="tech__tech-title">Jwt</h2>
-        </div>
-        <div className="tech__tech-container">
-          <img src={axios} alt="axios icon" className="tech__image" />
-          <h2 className="tech__tech-title">Axios</h2>
-        </div>
-        <div className="tech__tech-container">
-          <img src={nodemailer} alt="html icon" className="tech__image" />
-          <h2 className="tech__tech-title">nodemailer</h2>
         </div>
       </article>
     </section>
