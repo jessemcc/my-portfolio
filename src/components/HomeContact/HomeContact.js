@@ -23,13 +23,14 @@ const HomeContact = () => {
         }
       );
       console.log(response.data.success);
+      alert("Email sent successfully");
     } catch (error) {
       console.error(`Failed to send email: ${error}`);
     }
   };
 
   return (
-    <section className="home-contact">
+    <section className="home-contact" id="contact">
       <article className="home-contact__container">
         <h1 className="home-contact__title">CONTACT ME</h1>
         <form onSubmit={handleSubmit} className="home-contact__form">
