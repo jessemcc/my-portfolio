@@ -1,29 +1,8 @@
 import "./AboutPage.scss";
 import portrait from "../../assets/images/portrait.png";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-
-  const handleContactClick = (e, sectionId) => {
-    e.preventDefault();
-    if (pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 500);
-    } else {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-
   return (
     <section className="about" id="about">
       <article className="about__container">
@@ -142,11 +121,7 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="about__link-container">
-            <Link
-              className="link"
-              to="/"
-              onClick={(e) => handleContactClick(e, "contact")}
-            >
+            <Link className="link" to="/#contact">
               Hire Me
             </Link>
           </div>
