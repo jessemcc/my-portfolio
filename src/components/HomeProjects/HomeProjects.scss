@@ -34,7 +34,7 @@
     color: $primary-color-1;
 
     @include tablet {
-      @include size(27rem, 47rem);
+      @include size(27rem, 53rem);
       justify-content: space-between;
       margin: 1.6rem;
     }
@@ -62,7 +62,7 @@
 
   &__card-techs {
     @include tablet {
-      height: 8rem;
+      height: 12rem;
     }
   }
 
