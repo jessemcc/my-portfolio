@@ -1,0 +1,87 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.projects {
+  margin-top: 6.5rem;
+  background-color: $primary-color-1;
+  min-height: 100vh;
+
+  &__container {
+    @include flex(row, center, center, wrap);
+    max-width: 102rem;
+    margin: 1.6rem;
+    padding-bottom: 2rem;
+
+    @include tablet {
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 1.6rem auto;
+      padding-left: 1.6rem;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    width: 100%;
+  }
+
+  &__card {
+    @include flex(column, space-between, center, nowrap);
+    width: 100%;
+    text-align: center;
+    background-color: $primary-color-3;
+    padding: 1.6rem;
+    margin-top: 1.6rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem black;
+    text-decoration: none;
+    color: $primary-color-1;
+
+    @include tablet {
+      @include size(40rem, 75rem);
+      margin: 1.6rem;
+    }
+  }
+
+  &__card-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+    object-fit: cover;
+    margin: 1.6rem 0;
+
+    @include tablet {
+      @include size(30rem, 37rem);
+    }
+  }
+
+  &__card-title {
+    margin-top: 0.75rem;
+
+    @include tablet {
+      height: 8rem;
+    }
+  }
+
+  &__card-techs {
+    @include tablet {
+      height: 8rem;
+    }
+  }
+
+  &__link-button {
+    @include flex(row, center, center, nowrap);
+    margin-top: 1.6rem;
+    width: 100%;
+  }
+
+  &__links-container {
+    @include flex(row, space-evenly, center, nowrap);
+  }
+
+  &__link-container {
+    @include flex(row, center, center, nowrap);
+    margin-top: 1.6rem;
+    width: 100%;
+  }
+}
