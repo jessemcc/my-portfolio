@@ -19,7 +19,6 @@ const ProjectPage = () => {
         );
         setCurrentProject(data);
       };
-      console.log("running");
       getProject();
     } catch (error) {
       console.error(`Couldn't retrieve project video: ${error}`);
