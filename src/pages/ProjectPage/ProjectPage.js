@@ -23,7 +23,7 @@ const ProjectPage = () => {
     } catch (error) {
       console.error(`Couldn't retrieve project video: ${error}`);
     }
-  }, []);
+  }, [projectid]);
 
   if (!currentProject) {
     return;
