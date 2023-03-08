@@ -1,0 +1,62 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav {
+  background-color: $primary-color-3;
+  width: 100%;
+  box-shadow: 0.1rem 0.5rem 0.5rem black;
+
+  &__container {
+    height: 5.5rem;
+    max-width: 102rem;
+    padding: 0 !important;
+  }
+
+  &__logo {
+    @include size(5rem, 5rem);
+  }
+
+  &__collapse-container {
+    width: 100%;
+  }
+
+  &__link-container {
+    @include flex(column, center, center, nowrap);
+    border-top: none;
+    margin-top: 0.4rem;
+    width: 5.5rem;
+    background-color: $primary-color-3;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0.1rem 0.5rem 0.5rem black;
+
+    @include tablet {
+      width: 20rem;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &__link {
+    @include font-styles(1.2rem, 1.3rem, 400);
+    text-decoration: none;
+    color: $primary-color-1;
+
+    &:active {
+      color: $primary-color-2;
+    }
+  }
+
+  .nav-link {
+    @include flex(column, center, flex-end, nowrap);
+    width: 4rem;
+    text-align: end;
+
+    @include tablet {
+      width: 6rem;
+    }
+  }
+}
+
+.navbar-toggler {
+  margin-right: 1rem;
+}

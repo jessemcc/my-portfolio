@@ -1,0 +1,66 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.home-contact {
+  background-color: $primary-color-3;
+  padding: 1.6rem;
+
+  &__container {
+    max-width: 102rem;
+    margin: 0 auto;
+  }
+
+  &__form {
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__label {
+    @include flex(column, flex-start, space-between, nowrap);
+
+    @include tablet {
+      @include flex(row, center, center, nowrap);
+    }
+  }
+
+  &__input {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 2px solid $primary-color-2;
+    outline: none;
+    margin: 0.5rem 0;
+
+    &::placeholder {
+      font-family: inherit;
+      text-align: center;
+    }
+
+    &:focus {
+      border: 2px solid $primary-color-1;
+    }
+
+    @include tablet {
+      width: 85%;
+      max-width: 50rem;
+    }
+  }
+
+  &__textarea {
+    @extend .home-contact__input;
+    resize: none;
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  &__button-container {
+    @include flex(row, center, center, nowrap);
+  }
+
+  &__button {
+    background-color: $primary-color-1;
+    color: $primary-color-3;
+  }
+}

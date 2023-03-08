@@ -1,0 +1,7 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.home {
+  margin-top: 6.5rem;
+  background-color: $primary-color-1;
+}

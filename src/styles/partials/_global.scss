@@ -1,0 +1,79 @@
+@use "./typography" as *;
+@use "./mixins" as *;
+@use "./variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $primary-color-1;
+  color: $primary-color-3;
+  font-family: "Playfair";
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+// ALL FONT-STYLES ================================================
+
+h1 {
+  @include font-styles(2.8rem !important, 3.6rem !important, 700 !important);
+  margin: 0;
+
+  @include tablet {
+    @include font-styles(3.2rem !important, 4rem !important, 700 !important);
+  }
+}
+
+h2 {
+  @include font-styles(2rem !important, 2.8rem !important, 700 !important);
+  margin: 0;
+
+  @include tablet {
+    @include font-styles(2.4rem !important, 3.2rem !important, 700 !important);
+  }
+}
+
+h3 {
+  @include font-styles(1.3rem !important, 2rem !important, 700 !important);
+  margin: 0;
+
+  @include tablet {
+    @include font-styles(1.4rem !important, 2.2rem !important, 700 !important);
+  }
+}
+
+h4 {
+  @include font-styles(1.1rem !important, 1.6rem !important, 700 !important);
+  margin: 0;
+
+  @include tablet {
+    @include font-styles(1.2rem !important, 1.8rem !important, 700 !important);
+  }
+}
+
+.link {
+  @include flex(row, center, center, nowrap);
+  @include size(9.5rem, 3rem);
+  @include font-styles(1.2rem, 1.3rem, 700);
+  text-decoration: none;
+  color: $primary-color-1;
+  background-color: $primary-color-3;
+  border-radius: 1rem;
+  border: 2px solid $secondary-color-1;
+}
+
+p {
+  @include font-styles(1rem !important, 1.3rem !important, 400 !important);
+  margin: 0;
+
+  @include tablet {
+    @include font-styles(1.2rem !important, 1.5rem !important, 400 !important);
+  }
+}
