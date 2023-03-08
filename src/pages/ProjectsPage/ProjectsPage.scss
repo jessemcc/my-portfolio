@@ -38,7 +38,8 @@
     color: $primary-color-1;
 
     @include tablet {
-      @include size(40rem, 75rem);
+      justify-content: space-evenly;
+      @include size(40rem, 80rem);
       margin: 1.6rem;
     }
   }
@@ -47,11 +48,11 @@
     width: 100%;
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 1rem black;
-    object-fit: cover;
     margin: 1.6rem 0;
 
     @include tablet {
-      @include size(30rem, 37rem);
+      @include size(30rem, 35rem);
+      margin: 0 auto;
     }
   }
 
@@ -60,6 +61,17 @@
 
     @include tablet {
       height: 8rem;
+    }
+  }
+
+  &__description--height {
+    height: 7rem;
+  }
+
+  &__info-container {
+    @include tablet {
+      @include flex(column, space-evenly, space-between, nowrap);
+      height: 30rem;
     }
   }
 

@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.project {
+  margin-top: 6.5rem;
+  background-color: $primary-color-1;
+  min-height: 100vh;
+
+  &__container {
+    @include flex(column, center, center, nowrap);
+    width: 90%;
+    margin: 0 auto;
+    max-width: 102rem;
+  }
+
+  &__video {
+    @include flex(row, center, center, nowrap);
+    margin: 3rem auto;
+    width: 100%;
+  }
+
+  &__links-container {
+    @include flex(row, space-evenly, center, nowrap);
+    width: 100%;
+    margin: 0 auto 3rem auto;
+  }
+}

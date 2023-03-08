@@ -25,18 +25,23 @@ const ProjectsPage = () => {
   }
 
   const projectList = projects.map((project) => {
+    document.title = `Jesse McConnell - Projects`;
     return (
       <section key={project.id} className="projects__card">
         <h1 className="projects__card-title">{project.title}</h1>
-        <img
-          src={process.env.REACT_APP_API_URL + project.image}
-          alt="Snapshots of project"
-          className="projects__card-image"
-        />
+        <div className="projects__image-container">
+          <img
+            src={process.env.REACT_APP_API_URL + project.image}
+            alt="Snapshots of project"
+            className="projects__card-image"
+          />
+        </div>
         <article className="projects__info-container">
           <div className="projects__description-container">
             <h2 className="projects__description-title">Description</h2>
-            <p className="projects__description">{project.description}</p>
+            <p className="projects__description--height">
+              {project.description}
+            </p>
           </div>
           <div className="projects__description-container">
             <h2 className="projects__description-title">Techs used</h2>
@@ -70,7 +75,7 @@ const ProjectsPage = () => {
           </article>
           <div className="projects__link-container">
             <Link to={`/projects/${project.id}`} className="link">
-              More
+              Demo
             </Link>
           </div>
         </article>

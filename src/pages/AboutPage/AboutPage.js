@@ -3,6 +3,7 @@ import portrait from "../../assets/images/portrait.png";
 import { Link } from "react-router-dom";
 
 const AboutPage = () => {
+  document.title = `Jesse McConnell - About`;
   return (
     <section className="about" id="about">
       <article className="about__container">
