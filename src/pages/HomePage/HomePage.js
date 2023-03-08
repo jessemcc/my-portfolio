@@ -6,6 +6,7 @@ import HomeProjects from "../../components/HomeProjects/HomeProjects";
 import HomeContact from "../../components/HomeContact/HomeContact";
 
 const HomePage = () => {
+  document.title = `Jesse McConnell - Home`;
   return (
     <section className="home" id="home">
       <article className="home__container">
