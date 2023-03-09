@@ -25,9 +25,9 @@ const HomeContact = () => {
       });
       toast.success("Email sent successfully!");
       setSending(false);
-      // setName("");
-      // setEmail("");
-      // setBody("");
+      setName("");
+      setEmail("");
+      setBody("");
     } catch (error) {
       console.error(`Failed to send email: ${error}`);
       toast.error("Failed to send email");
