@@ -1,11 +1,15 @@
+import React, { useState } from "react";
 import axios from "axios";
-import { useState } from "react";
+import { ProgressBar } from "react-bootstrap";
 import "./HomeContact.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomeContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [body, setBody] = useState("");
+  const [sending, setSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,23 +18,28 @@ const HomeContact = () => {
       return;
     }
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/send-email`,
-        {
-          name,
-          email,
-          body,
-        }
-      );
-      console.log(response.data.success);
-      alert("Email sent successfully");
+      setSending(true);
+      await axios.post(`${process.env.REACT_APP_API_URL}/send-email`, {
+        name,
+        email,
+        body,
+      });
+      toast.success("Email sent successfully!");
+      setSending(false);
+      // setName("");
+      // setEmail("");
+      // setBody("");
     } catch (error) {
       console.error(`Failed to send email: ${error}`);
+      toast.error("Failed to send email");
+      setSending(false);
     }
   };
 
   return (
     <section className="home-contact" id="contact">
+      <ToastContainer />
+
       <article className="home-contact__container">
         <h1 className="home-contact__title">CONTACT ME</h1>
         <form onSubmit={handleSubmit} className="home-contact__form">
@@ -67,7 +76,9 @@ const HomeContact = () => {
             />
           </label>
           <div className="home-contact__button-container">
-            <button className="home-contact__button link">Hire Me</button>
+            <button className="home-contact__button link" disabled={sending}>
+              {sending ? "Sending..." : "Hire Me"}
+            </button>
           </div>
         </form>
       </article>
