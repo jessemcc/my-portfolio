@@ -32,10 +32,14 @@
     border: 2px solid $primary-color-2;
     outline: none;
     margin: 0.5rem 0;
+    max-width: 53rem;
+    text-align: center;
+    font-size: 1.3rem;
 
     &::placeholder {
       font-family: inherit;
       text-align: center;
+      font-size: 1.3rem;
     }
 
     &:focus {
@@ -43,8 +47,7 @@
     }
 
     @include tablet {
-      width: 85%;
-      max-width: 50rem;
+      width: 100%;
     }
   }
 
