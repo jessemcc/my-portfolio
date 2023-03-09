@@ -53,7 +53,7 @@ const ProjectsPage = () => {
                 <Link
                   to={project.repo}
                   target="_blank"
-                  className="projects__description"
+                  className="projects__description projects__link"
                 >
                   View GitHub
                 </Link>
@@ -65,7 +65,7 @@ const ProjectsPage = () => {
                   <Link
                     to={project.link}
                     target="_blank"
-                    className="projects__description"
+                    className="projects__description projects__link"
                   >
                     View Website
                   </Link>
