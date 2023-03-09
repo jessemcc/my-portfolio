@@ -23,7 +23,7 @@ body {
 // ALL FONT-STYLES ================================================
 
 h1 {
-  @include font-styles(2.8rem !important, 3.6rem !important, 700 !important);
+  @include font-styles(3rem !important, 3.6rem !important, 700 !important);
   margin: 0;
 
   @include tablet {
@@ -32,20 +32,20 @@ h1 {
 }
 
 h2 {
-  @include font-styles(2rem !important, 2.8rem !important, 700 !important);
+  @include font-styles(2.3rem !important, 2.8rem !important, 700 !important);
   margin: 0;
 
   @include tablet {
-    @include font-styles(2.4rem !important, 3.2rem !important, 700 !important);
+    @include font-styles(2.5rem !important, 3.2rem !important, 700 !important);
   }
 }
 
 h3 {
-  @include font-styles(1.3rem !important, 2rem !important, 700 !important);
+  @include font-styles(1.8rem !important, 2rem !important, 700 !important);
   margin: 0;
 
   @include tablet {
-    @include font-styles(1.4rem !important, 2.2rem !important, 700 !important);
+    @include font-styles(2rem !important, 2.2rem !important, 700 !important);
   }
 }
 
@@ -60,20 +60,25 @@ h4 {
 
 .link {
   @include flex(row, center, center, nowrap);
-  @include size(9.5rem, 3rem);
-  @include font-styles(1.2rem, 1.3rem, 700);
+  @include size(43%, 4rem);
+  @include font-styles(1.4rem, 1.3rem, 700);
   text-decoration: none;
   color: $primary-color-1;
   background-color: $primary-color-3;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: 2px solid $secondary-color-1;
+  max-width: 18rem;
+
+  @include tablet {
+    font-size: 1.6rem;
+  }
 }
 
 p {
-  @include font-styles(1rem !important, 1.3rem !important, 400 !important);
+  @include font-styles(1.3rem !important, 1.6rem !important, 400 !important);
   margin: 0;
 
   @include tablet {
-    @include font-styles(1.2rem !important, 1.5rem !important, 400 !important);
+    @include font-styles(1.4rem !important, 1.6rem !important, 400 !important);
   }
 }

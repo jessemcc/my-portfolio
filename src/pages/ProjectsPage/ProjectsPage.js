@@ -49,7 +49,7 @@ const ProjectsPage = () => {
           </div>
           <article className="projects__links-container">
             <div className="projects__description-container">
-              <h2 className="projects__description-title">
+              <h3 className="projects__description-title">
                 <Link
                   to={project.repo}
                   target="_blank"
@@ -57,11 +57,11 @@ const ProjectsPage = () => {
                 >
                   View GitHub
                 </Link>
-              </h2>
+              </h3>
             </div>
             {project.link !== "" ? (
               <div className="projects__description-container">
-                <h2 className="projects__description-title">
+                <h3 className="projects__description-title">
                   <Link
                     to={project.link}
                     target="_blank"
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
                   >
                     View Website
                   </Link>
-                </h2>
+                </h3>
               </div>
             ) : null}
           </article>
