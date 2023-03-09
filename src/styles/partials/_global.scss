@@ -69,6 +69,11 @@ h4 {
   border: 2px solid $secondary-color-1;
   max-width: 18rem;
 
+  &:hover {
+    color: $primary-color-3;
+    background-color: $primary-color-1;
+  }
+
   @include tablet {
     font-size: 1.6rem;
   }

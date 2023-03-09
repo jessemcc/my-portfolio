@@ -65,5 +65,10 @@
   &__button {
     background-color: $primary-color-1;
     color: $primary-color-3;
+
+    &:hover {
+      color: $primary-color-1;
+      background-color: $primary-color-3;
+    }
   }
 }
