@@ -9,7 +9,7 @@
   &__container {
     @include flex(row, center, center, wrap);
     max-width: 102rem;
-    margin: 1.6rem;
+    margin: 0 1.6rem;
     padding-bottom: 2rem;
 
     @include tablet {
