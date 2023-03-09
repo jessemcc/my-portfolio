@@ -28,6 +28,7 @@
   &__card {
     @include flex(column, space-between, center, nowrap);
     width: 100%;
+    max-width: 38rem;
     text-align: center;
     background-color: $primary-color-3;
     padding: 1.6rem;
@@ -65,13 +66,13 @@
   }
 
   &__description--height {
-    height: 7rem;
+    max-height: 12rem;
   }
 
   &__info-container {
     @include tablet {
       @include flex(column, space-evenly, space-between, nowrap);
-      height: 30rem;
+      max-height: 45rem;
     }
   }
 
@@ -88,7 +89,7 @@
   }
 
   &__links-container {
-    @include flex(row, space-evenly, center, nowrap);
+    @include flex(row, space-around, center, nowrap);
   }
 
   &__link-container {

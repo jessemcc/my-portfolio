@@ -19,4 +19,9 @@
       height: 25rem;
     }
   }
+
+  &__typing {
+    white-space: pre-wrap;
+    line-height: 1.5;
+  }
 }

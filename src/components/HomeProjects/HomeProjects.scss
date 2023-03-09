@@ -23,6 +23,7 @@
 
   &__card {
     @include flex(column, space-between, center, nowrap);
+    max-width: 27rem;
     width: 100%;
     text-align: center;
     background-color: $primary-color-3;

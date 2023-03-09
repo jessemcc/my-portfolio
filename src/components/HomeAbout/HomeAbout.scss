@@ -37,7 +37,7 @@
   &__image {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0.1rem 0.5rem 0.5rem black;
+    box-shadow: 0.1rem 0.3rem 0.2rem black;
 
     @include tablet {
       max-width: 30rem;
@@ -60,14 +60,21 @@
   &__about-me-container {
     margin-bottom: 2.6rem;
     min-height: 39rem;
-    max-height: 45rem;
+
+    @include tablet {
+      min-height: 50rem;
+    }
   }
 
   &__about-me {
     margin: 2rem auto;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    font-size: 1.1rem;
 
     @include tablet {
       margin: 0 2rem;
+      font-size: 1.2rem;
     }
   }
 

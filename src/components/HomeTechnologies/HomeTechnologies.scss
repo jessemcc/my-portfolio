@@ -6,12 +6,12 @@
   background-color: $primary-color-3;
 
   @include tablet {
-    margin: 2rem auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 1.6rem;
   }
 
   &__title {
-    margin-left: 1.6rem;
+    margin: 0 1.6rem;
     padding-top: 1.6rem;
 
     @include tablet {
