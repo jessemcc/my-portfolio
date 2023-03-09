@@ -31,7 +31,8 @@
     box-shadow: 0 0.6rem 0.7rem black;
 
     @include tablet {
-      width: 20rem;
+      @include flex(row, space-between, center, nowrap);
+      width: 25rem;
       border: none;
       box-shadow: none;
     }
@@ -42,8 +43,16 @@
     text-decoration: none;
     color: $primary-color-1;
 
+    &:hover {
+      color: black;
+    }
+
     &:active {
       color: $primary-color-2;
+    }
+
+    @include tablet {
+      font-size: 1.6rem;
     }
   }
 
